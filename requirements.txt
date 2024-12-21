@@ -1,0 +1,8 @@
+PyQt5
+requests
+pywin32; platform_system == "Windows"
+rarfile
+logging
+ctypes
+shutil
+threading
