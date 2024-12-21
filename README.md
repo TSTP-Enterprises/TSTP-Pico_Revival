@@ -77,7 +77,7 @@ https://www.youtube.com/watch?v=sWcWASekz9Q
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/TSTP-Enterprises/TSTP-Pico-Revival.git
+   git clone https://github.com/TSTP-Enterprises/TSTP-Pico_Revival.git
    cd TSTP-Pico-Revival
    ```
 
@@ -169,7 +169,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 ## 🔗 Quick Links
 
 - [🌐 Official Website](https://tstp.xyz/)
-- [💻 GitHub Repository](https://github.com/TSTP-Enterprises/TSTP-Pico-Revival)
+- [💻 GitHub Repository](https://github.com/TSTP-Enterprises/TSTP-Pico_Revival)
 - [👥 LinkedIn](https://www.linkedin.com/company/thesolutions-toproblems)
 - [🎥 YouTube Channel](https://www.youtube.com/@yourpststudios)
 - [📱 Facebook Page](https://www.facebook.com/profile.php?id=61557162643039)
