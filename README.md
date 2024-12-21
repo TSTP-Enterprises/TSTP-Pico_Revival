@@ -14,6 +14,10 @@ The TSTP Pico Revival Tool simplifies the process of managing Raspberry Pi Pico 
 
 This tool provides a streamlined solution with comprehensive error handling.
 
+## Demo Video:
+
+https://www.youtube.com/watch?v=sWcWASekz9Q
+
 ## ✨ Key Features
 
 - **Smart Device Detection**
