@@ -9,7 +9,7 @@ from PyQt5.QtWidgets import (QApplication, QMainWindow, QPushButton, QVBoxLayout
                             QWidget, QLabel, QTextEdit, QFileDialog, QMessageBox, QMenuBar,
                             QMenu, QAction, QDialog, QTextBrowser, QComboBox, QGroupBox)
 from PyQt5.QtCore import Qt, QTimer, QUrl, pyqtSignal, QObject
-from PyQt5.QtGui import QFont, QPalette, QColor, QDesktopServices
+from PyQt5.QtGui import QFont, QPalette, QColor, QDesktopServices, QIcon
 
 # Attempt to import for RAR extraction (if installed)
 # You may need `pip install rarfile`
@@ -18,10 +18,16 @@ try:
 except ImportError:
     rarfile = None
 
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(base_path, relative_path)    
+
 class AboutDialog(QDialog):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("About")
+        self.setWindowIcon(QIcon(resource_path('app_icon.ico')))
         self.setFixedSize(600, 800)
         self.setStyleSheet("""
             QDialog {
@@ -138,6 +144,7 @@ class TutorialDialog(QDialog):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Tutorial")
+        self.setWindowIcon(QIcon(resource_path('app_icon.ico')))
         self.setFixedSize(900, 700)
         self.setStyleSheet("""
             QDialog {
@@ -342,6 +349,7 @@ class DonationDialog(QDialog):
         super().__init__()
         self.setWindowTitle("Support Development")
         self.setFixedSize(1000, 800)
+        self.setWindowIcon(QIcon(resource_path('app_icon.ico')))
         self.setStyleSheet("""
             QDialog {
                 background-color: #2b2b2b;
@@ -567,6 +575,12 @@ class PicoFlasher(QMainWindow):
         super().__init__()
         self.setWindowTitle("Raspberry Pi Pico Revival Tool")
         self.setGeometry(100, 100, 800, 600)
+        
+        # Set window icon using resource_path helper
+        icon_path = resource_path('app_icon.ico')
+        if os.path.exists(icon_path):
+            self.setWindowIcon(QIcon(icon_path))
+            
         self.setStyleSheet("""
             QMainWindow {background-color: #2b2b2b;}
             QWidget {background-color: #2b2b2b; color: #ffffff;}
