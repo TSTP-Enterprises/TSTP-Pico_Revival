@@ -1,7 +1,6 @@
 PyQt5
 requests
 pywin32; platform_system == "Windows"
-logging
 ctypes
 shutil
 threading
