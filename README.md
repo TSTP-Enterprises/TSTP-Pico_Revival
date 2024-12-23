@@ -70,8 +70,13 @@ https://www.youtube.com/watch?v=sWcWASekz9Q
 ### Prerequisites
 - Python 3.7+
 - PyQt5
-- rarfile (optional)
 - win32api (Windows only)
+- requests
+- shutil
+- datetime
+- zipfile
+- os
+- sys
 
 ### Installation Steps
 
@@ -100,7 +105,7 @@ https://www.youtube.com/watch?v=sWcWASekz9Q
 
 2. **Create Executable**
    ```bash
-   pyinstaller --onefile --windowed --icon=assets/icon.ico main.py
+   pyinstaller --onefile --windowed --icon=app_icon.ico main.py
    ```
 
 ## 📖 Usage Tutorial
