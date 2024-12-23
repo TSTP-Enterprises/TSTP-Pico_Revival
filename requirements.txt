@@ -1,4 +1,3 @@
 PyQt5
 pywin32; platform_system == "Windows"
-datetime
 zipfile
