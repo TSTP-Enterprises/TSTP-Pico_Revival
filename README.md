@@ -78,7 +78,7 @@ https://www.youtube.com/watch?v=sWcWASekz9Q
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/TSTP-Enterprises/TSTP-Pico_Revival.git
-   cd TSTP-Pico-Revival
+   cd TSTP-Pico_Revival
    ```
 
 2. **Install Dependencies**
@@ -88,7 +88,7 @@ https://www.youtube.com/watch?v=sWcWASekz9Q
 
 3. **Run the Application**
    ```bash
-   python pico_flasher.py
+   python main.py
    ```
 
 ### Building from Source
@@ -100,7 +100,7 @@ https://www.youtube.com/watch?v=sWcWASekz9Q
 
 2. **Create Executable**
    ```bash
-   pyinstaller --onefile --windowed --icon=assets/icon.ico pico_flasher.py
+   pyinstaller --onefile --windowed --icon=assets/icon.ico main.py
    ```
 
 ## 📖 Usage Tutorial
