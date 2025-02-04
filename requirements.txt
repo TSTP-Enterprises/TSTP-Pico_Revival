@@ -1,8 +1,10 @@
-PyQt5
-requests
-pywin32; platform_system == "Windows"
-rarfile
-logging
-ctypes
-shutil
-threading
+PyQt5==5.15.11
+pywin32==308; platform_system == "Windows"
+certifi==2024.12.14
+charset-normalizer==3.4.1
+idna==3.10
+pip==24.2
+PyQt5-Qt5==5.15.2
+PyQt5_sip==12.16.1
+requests==2.32.3
+urllib3==2.3.0
